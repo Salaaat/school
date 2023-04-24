@@ -6,7 +6,7 @@ def printer(word):
         abc.append(i)
     abc = tuple(abc)
     for i in word:
-        print(i*abc.index(i))
+        print(i*(abc.index(i)-1))
 
 while True:
     printer(input())
